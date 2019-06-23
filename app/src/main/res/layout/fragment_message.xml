@@ -24,13 +24,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <Button
-            android:id="@+id/btn_test_message"
-            android:layout_width="300dp"
-            android:layout_height="100dp"
-            android:text="测试"
-            android:textSize="50sp"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#696969"
+            ></android.support.v7.widget.RecyclerView>
+
     </RelativeLayout>
 </LinearLayout>
