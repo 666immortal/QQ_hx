@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.UseListHolder> {
+public class RecordboxAdapter extends RecyclerView.Adapter<RecordboxAdapter.RecordListHolder> {
 
     private Context mContext;
     private OnItemClickListerner mListerner;
@@ -18,21 +18,21 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.UseListH
     // Adapter改写成下面这样
     // public MessageAdapter(Context context, list)
 
-    public ContactAdapter(Context context, OnItemClickListerner listerner){
+    public RecordboxAdapter(Context context, OnItemClickListerner listerner){
         this.mContext = context;
         this.mListerner = listerner;
     }
 
     @NonNull
     @Override
-    public ContactAdapter.UseListHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        return new UseListHolder(LayoutInflater.from(mContext).inflate(R.layout.layout_contact_list, viewGroup, false));
+    public RecordboxAdapter.RecordListHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+        return new RecordListHolder(LayoutInflater.from(mContext).inflate(R.layout., viewGroup, false));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ContactAdapter.UseListHolder viewHolder, final int position) {
+    public void onBindViewHolder(@NonNull RecordboxAdapter.RecordListHolder viewHolder, final int position) {
         // 在这里可以给控件设置内容等操作
-        viewHolder.textview.setText("Contact List");
+        viewHolder.textview.setText("Message List");
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,14 +46,14 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.UseListH
         return 30;
     }
 
-    class UseListHolder extends RecyclerView.ViewHolder{
+    class RecordListHolder extends RecyclerView.ViewHolder{
 
         // 布局里的控件在这里声明
         private TextView textview;
 
-        public UseListHolder(View itemView){
+        public RecordListHolder(View itemView){
             super(itemView);
-            textview = itemView.findViewById(R.id.tv_title2);
+            textview = itemView.findViewById(R.id.tv_title1);
         }
     }
 

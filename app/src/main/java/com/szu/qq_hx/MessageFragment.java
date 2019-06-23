@@ -1,5 +1,6 @@
 package com.szu.qq_hx;
 
+import android.content.Intent;
 import android.graphics.Rect;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -38,7 +39,8 @@ public class MessageFragment extends Fragment {
         m_RvMsg.setAdapter(new MessageAdapter(getActivity(), new MessageAdapter.OnItemClickListerner() {
             @Override
             public void onClick(int pos) {
-                Toast.makeText(getActivity(), "msg click..." + pos, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), ChatSurfaceActivity.class);
+                startActivity(intent);
             }
         }));
     }

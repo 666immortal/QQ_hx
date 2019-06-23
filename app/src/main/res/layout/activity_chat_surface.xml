@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_line"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#00BFFF"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/et_object_name"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="小刘"
+            android:textSize="40sp"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"/>
+
+        <Button
+            android:id="@+id/btn_gobackfromchat"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#00BFFF"
+            android:drawableTop="@drawable/btn_goback"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:scaleType="matrix"
+            />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/chat_show_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_line"
+        android:layout_above="@id/bottom_of_char"
+        android:background="#696969"
+        ></android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_of_char"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F5F5F5"
+        android:padding="10dp"
+        >
+
+        <EditText
+            android:id="@+id/et_msg"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/msg_editview"
+            />
+
+        <Button
+            android:id="@+id/btn_send_msg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_sendmsg"
+            android:text="SEND"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/et_msg"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
