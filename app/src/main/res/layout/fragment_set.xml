@@ -19,19 +19,22 @@
             android:textSize="40sp"/>
     </RelativeLayout>
 
-    <View
-        android:id="@+id/line"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/devide_line" />
-
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <View
+            android:id="@+id/line1"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:layout_marginTop="15dp">
+            android:layout_height="1dp"
+            android:layout_above="@id/mymsg"
+            android:background="@color/devide_line" />
+
+        <LinearLayout
+            android:id="@+id/mymsg"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
 
             <ImageView
                 android:layout_width="100dp"
@@ -50,6 +53,14 @@
                 android:textSize="30dp"/>
 
         </LinearLayout>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/mymsg"
+            android:background="@color/devide_line" />
+
         <Button
             android:id="@+id/btn_test_set"
             android:layout_width="match_parent"

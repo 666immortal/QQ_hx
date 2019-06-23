@@ -30,20 +30,11 @@ public class ChatSurfaceActivity extends AppCompatActivity {
 
         m_rvRecord = (RecyclerView)findViewById(R.id.chat_show_box);
         m_rvRecord.setLayoutManager(new LinearLayoutManager(ChatSurfaceActivity.this));
-        m_rvRecord.addItemDecoration(new MyDecoration());
         m_rvRecord.setAdapter(new RecordboxAdapter(ChatSurfaceActivity.this, new RecordboxAdapter.OnItemClickListerner() {
             @Override
             public void onClick(int pos) {
 
             }
         }));
-    }
-
-    class MyDecoration extends RecyclerView.ItemDecoration{
-        @Override
-        public void getItemOffsets(@NonNull Rect outRect, @NonNull View view, @NonNull RecyclerView parent, @NonNull RecyclerView.State state) {
-            super.getItemOffsets(outRect, view, parent, state);
-            outRect.set(0,0,0,getResources().getDimensionPixelOffset(R.dimen.dividerHeight));
-        }
     }
 }
