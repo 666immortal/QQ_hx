@@ -12,10 +12,26 @@ import java.util.TimerTask;
 import com.szu.qq_hx.Client;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Client client;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        new Thread(){
+//            public void run(){
+//                if(client.connect()){
+//                    if(client.connect()){
+//                        client.register("xiaoliu", "1234");
+//                    }
+//
+//
+//                }
+//            }
+//        }.start();
+
         TimerTask task = new TimerTask() {
             @Override
             public void run() {

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class RegLogActivity extends AppCompatActivity {
 
@@ -46,9 +47,7 @@ public class RegLogActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // 编写注册按钮的响应函数
 
-                // 以下为测试代码，测试完请注释
-//                Intent intent = new Intent(RegLogActivity.this, ChatListActivity.class);
-//                startActivity(intent);
+                Toast.makeText(RegLogActivity.this, "按键被点击了", Toast.LENGTH_SHORT).show();
             }
         });
     }

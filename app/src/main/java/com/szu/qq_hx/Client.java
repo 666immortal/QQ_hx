@@ -12,7 +12,7 @@ import com.szu.qq_hx.MsgPackage;
 
 public class Client implements Serializable {
     private static final int BAG_SIZE = 212;
-    private static final String SERVER_IP = "172.21.128.237";
+    private static final String SERVER_IP = "172.21.128.127";
     private static final int SERVER_PORT = 1012;
     private static final boolean ONLINE = true;
     private static final boolean OFFLINE = false;
