@@ -14,17 +14,17 @@
 
 ### 设计成果
 
-![启动界面](https://github.com/666immortal/QQ_hx/截图/启动界面.png)
+![启动界面](https://github.com/666immortal/QQ_hx/blob/master/截图/启动界面.png)
 
-![登陆注册界面](https://github.com/666immortal/QQ_hx/截图/登陆注册界面.png)
+![登陆注册界面](https://github.com/666immortal/QQ_hx/blob/master/截图/登陆注册界面.png)
 
-![主界面1](https://github.com/666immortal/QQ_hx/截图/主界面1.png)
+![主界面1](https://github.com/666immortal/QQ_hx/blob/master/截图/主界面1.png)
 
-![主界面2](https://github.com/666immortal/QQ_hx/截图/主界面2.png)
+![主界面2](https://github.com/666immortal/QQ_hx/blob/master/截图/主界面2.png)
 
-![主界面3](https://github.com/666immortal/QQ_hx/截图/主界面3.png)
+![主界面3](https://github.com/666immortal/QQ_hx/blob/master/截图/主界面3.png)
 
-![聊天界面](https://github.com/666immortal/QQ_hx/截图/聊天界面.png)
+![聊天界面](https://github.com/666immortal/QQ_hx/blob/master/截图/聊天界面.png)
 
 
 
